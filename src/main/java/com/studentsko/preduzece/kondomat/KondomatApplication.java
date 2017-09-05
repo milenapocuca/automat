@@ -16,7 +16,7 @@ public class KondomatApplication {
 	public static void main(String[] args) {
 		FileInputStream serviceAccount = null;
 		try {
-			serviceAccount = new FileInputStream("kondomat-eb68e-firebase-adminsdk-m6eow-5b95336692.json");
+			serviceAccount = new FileInputStream("kondomat-23ddd-firebase-adminsdk-u4ucb-fe3167b4da.json");
 		} catch (FileNotFoundException e) {
 			e.printStackTrace();
 		}
@@ -25,7 +25,7 @@ public class KondomatApplication {
 		try {
 			options = new FirebaseOptions.Builder()
 					.setCredential(FirebaseCredentials.fromCertificate(serviceAccount))
-					.setDatabaseUrl("https://kondomat-eb68e.firebaseio.com/")
+					.setDatabaseUrl("https://kondomat-23ddd.firebaseio.com/")
 					.build();
 		} catch (IOException e) {
 			e.printStackTrace();
